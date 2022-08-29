@@ -1,6 +1,10 @@
 // Requiring express in our server
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
+
+app.use(cors());
 
 // Defining get request at '/' route
 app.get('/', function(req, res) {
